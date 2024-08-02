@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+:root{
+    --text-white:white;
+    --hover-text:#ffbe33;
+    --font-family:sans-serif;
+    --hover-trans:all ease .4s;
+    --heading-family: "Satisfy", cursive;
+}
+.hero-section{
+    min-height: 100vh;
+}
+
+.img-fitness{
+    object-fit: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+}
+
+/* header  */
+
+.text-logo{
+ font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.toggle-icon{
+    font-size: 2rem;
+}
+.list-items{
+    list-style: none;
+    width: 100%;
+    padding-right: 5rem;
+    justify-content: end;
+}
+.list-items li{
+    padding: 0 1.1rem;
+}
+.list-items a{
+    color: var(--text-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease .2s;
+    font-weight: 200;
+}
+.list-items li a:hover{
+    color: var(--hover-text);
+}
+.order-btn{
+    padding:.5vw 2vw;
+    width: 10rem;
+    border-radius: 20px;
+    color: var(--text-white);
+    background-color: var(--hover-text);
+    border: none;
+    transition: var(--hover-trans);
+}
+
+.order-btn:hover{
+    background-color: #fdad01;
+}
+.web-icon i{
+    color: #ffffff;
+    transition: var(--hover-trans);
+}
+.web-icon i:hover{
+    color: var(--hover-text);
+}
+
+
+/* slider section  */
+.slider-section{
+    height: 100%;
+    width: 100%;
+    padding: 3rem 0px 0rem 0px;  
+    
+}
+.carousel-btn[data-bs-target]{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fdad01;
+}
+.carousel-indicators {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    bottom: -20%;
+    padding: 0;
+    display: block;
+}
+.sliders h2{
+    font-family: var(--heading-family);
+    font-size: 3.5rem;
+    padding-bottom: .5rem;
+    width: 50%;
+}
+.sliders p{
+    width: 50%;
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    color: #888888;
+    text-align: left;
+    word-spacing: 3px;
+    padding-bottom: .4rem;
+}
+
+
+
+
+/* booking section  */
+
+.booking-section h2{
+    font-family: var(--heading-family);
+    font-size: 2.5rem;
+}
+.booking-section form input{
+    border: 1px solid #9a9a9a;
+    margin-bottom: 1.3rem;
+    padding: .8rem 1rem;
+}
+.booking-section form select{
+    border: 1px solid #9a9a9a;
+    margin-bottom: 1.3rem;
+    padding: .8rem 1rem;
+}
+option{
+    padding: 4rem;
+}
+.booking-section form input::placeholder{
+    color: 222222;
+}
+.booking-section form input:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: #9a9a9a;
+}
+.booking-section form select:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: #9a9a9a;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.submit-btn{
+    margin:1.5rem .8rem;
+    padding:.8rem 3vw;
+    text-transform: uppercase;
+    width: 12rem;
+    border-radius: 20px;
+    color: var(--text-white);
+    background-color: var(--hover-text);
+    border: none;
+    transition: var(--hover-trans);
+}
